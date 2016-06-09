@@ -1,0 +1,335 @@
+/* Estos estilos son generales*/
+
+*{
+	padding: 0;
+	margin-top: 0;
+	font-family: inherit;
+}
+span{
+	color: white;
+}
+p, h1, h2, h3 ,h4, h5 ,h6{
+	font-family: 'Raleway', sans-serif;
+	color: #F9F9F9;	
+}
+.font{
+	font-family: 'Raleway', sans-serif;
+}
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+}
+.margin-auto{
+	margin: 0 auto;
+}
+.flex{
+	display: flex;
+}
+/* estos pertenecen a el index */
+
+.columnas{
+	position: relative;
+	float: left;
+	width: 20%;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.descubre-container{
+	width: 100%;
+}
+.img-container-descubre{
+	height: 160px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+.black{
+	background-color: #404040;	
+	border-radius: 0;
+}
+.white-words p , h3{
+	color: white;
+}
+.white-words h3,  p{
+	color: white;
+}
+.thumbnail{
+	margin: 3px;
+	padding: 0px;
+	overflow: hidden;
+	border-radius: 10px;
+    border: none;
+}
+.1-container-image, .3-container-image{
+	background-image: url('img/ptv.jpg');
+}
+.2-container-image{
+	background-image: url('img/KISS.jpg');
+}
+.4-container-image{
+	background-image: url('img/sws.jpg');
+}
+.5-container-image{
+	background-image: url('img/bmth.jpg');
+}
+
+
+/*estos estilos pertenecen al navbar*/
+
+
+.navbar{
+	border-radius: 0;
+	margin-bottom: 0px;
+}
+.links-nav{
+	color: #C0C0C0;
+	font-family: 'Raleway', sans-serif;
+	transition: background-color .8s ease-out;
+	margin: 0px 10px;
+}
+.links-nav:hover{
+	color: #32C0E0;
+	text-decoration: none;
+}
+.input-nav{
+	width: 350px !important;
+}
+.glyphicon-user{
+	transition: background-color .8s ease-out;
+}
+.glyphicon-user:hover{
+	color: #32C0E0;	
+}
+.navbar-right{
+	display: inline-flex;
+    height: 27px;
+    margin-right: 30px;
+}
+.form-navbar{
+	margin: auto;
+}
+.glyphicon-user{
+	margin-left: 9px;
+}
+.play-nav{
+	margin-right: 12px;
+}
+
+
+/* Estos estilos pertenecen a crear */
+
+body{
+	background-color: #353535;
+}
+.organiza-tu-evento{
+	margin-bottom: 26px;
+}
+.margin-top-crear{
+	margin-top: 23px;
+}
+.btn-crear{
+	transition: background-color .8s ease-out;
+}
+.btn-crear:hover{
+	background-color: #32C0E0; 
+}
+.cosas-del-evento-container{
+	width: 49%;
+	background-color: #252525;
+	height: auto;
+	margin-top: 57px;	
+	margin-bottom: 10px;
+	padding-bottom: 30px;
+}
+.vista-previa-container{
+	height: 43.6vw;
+	width: 49%;
+	margin-top: 57px;
+	margin-bottom: 10px;
+	padding-bottom: 30px;
+}
+.municipio{
+	margin-top: 10px;
+}
+.container-thumbnails-venues{
+	display: inline-flex;
+}
+
+.venues-container{
+	width: 543px;
+	margin-top: -17px;
+}
+.venues-thumbnail{
+	border-radius: 0;
+	background-color: black;
+	border: none;
+	height: 151px;
+	transition: background-color .8s ease-out;
+}
+.venues-thumbnail:hover{
+	background-color: #32C0E0;
+}
+.fechas-disponibles{
+	margin-top: 30px;
+}
+.image-container-vista-previa{
+	overflow: hidden;
+	width: 100%;
+	height: 360px;
+}
+.img-vista-previa{
+	width: 100%;
+	overflow: hidden;
+	z-index: 1;
+}
+.nombre-banda-previa{
+	height: 40px;
+	width: 100%;
+	background: linear-gradient(transparent, black);
+	position: inherit;
+	margin-top: -60px;
+}
+.image-thumbnail{
+	width: 100%;
+	height: 68% !important;
+}
+.ano-fecha-evento{
+	display: flex; 
+	float: right; 
+	margin-top: 50px;
+}
+.dia-mes-fecha{
+	display: inline;
+	float: right;
+}
+.container-fecha-previa{
+	margin-top:-46px;
+	margin-right: 10px;
+	position: inherit;
+}
+.circulo-personas-necesarias{
+	height: 200px;
+	width: 200px;
+	border-radius: 200px;
+	background-color: #252525;
+	border-color: #32C0E0;
+	margin: 58px 0px 0px 30px;
+	border-style: dashed;
+	transition: background-color .8s ease-out;
+}
+.circulo-personas-necesarias:hover{
+	background-color: #32C0E0;
+	border-color: #252525;
+	transition: background-color .8s ease-out;
+}
+.circulo-personas-necesarias:hover > #precio{
+	color: #252525;
+}
+.circulo-personas-necesarias:hover > #por-persona{
+	color: #252525;
+}
+.container-vista-previa-necesarias{
+	background-color: #252525;
+    margin-top: 46px;
+    width: 95%;
+    height: 232px;
+    margin-left: 15px;
+} 
+.container-personas-necesarias{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	margin-top: 50px;
+}
+.precio{
+    margin-top: inherit;
+    text-align: center;
+}
+.por-persona{
+	text-align: center;
+}
+.texto-necesitas{
+	margin-left: 10px;
+}
+.terminos{
+	display: inline;
+}
+.btn-crear-evento{
+	margin-top: 60px;
+    width: 100%;
+    font-family: 'raleway', sans-serif;
+    background-color: #252525;
+	color: white;
+	transition: background-color .8s ease-out;
+}
+.btn-crear-evento:hover{
+	background-color: #32C0E0;
+	color: #252525;
+	font-weight: 1000;
+}
+.palomita-aceptar:hover{
+	color: #32C0E0;
+}
+.nombre-modal-crear-evento{
+	color: #252525;
+}
+.terminos-modal{
+	color: #252525;
+}
+
+/*media query de crear */
+
+@media (max-width: 1150px){
+	.venues-container{
+		width: 444px;
+	}
+	.container-vista-previa-necesarias{
+		width: 93.7%;
+	}
+}
+
+
+
+  /*estos estilos pertenecen a el detalle de los eventos*/
+
+
+.main-detalles{
+	margin-top: 65px;
+}
+.container-image-vista{
+	background-image: url('../img/ptv.jpg');
+	background-position: center; 
+	overflow: hidden; 
+	background-size: 300px;
+	background-repeat: no-repeat; 
+	height:	195px; 
+	border-radius: 400px; 
+	margin: 0 auto;
+}
+#container-reproducir{
+	width: 196px;
+    background-size: 300px;
+    height: 195px;
+    border-radius: 400px;
+    margin: 0 auto;
+    opacity: .8;
+    background-color: #252525;
+    margin-top: -195px;
+    display: none;
+
+}
+.container-image-vista:hover > #container-reproducir{
+	display: block;
+	transition: opacity .8s ease-out;
+}
+}
+main hr:first-child{
+	color: white;
+}
+main .flex h1:first-child{
+	margin-top: 12px;
+}
