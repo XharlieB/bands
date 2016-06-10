@@ -1,8 +1,18 @@
 from __future__ import unicode_literals
-from django.db import models
-from django.contrib.auth.models import User	
+from django.db import models	
 
 # Create your models here.
+
+class User(models.Model):
+	#atributos
+	nombre = models.CharField(max_length=100)
+	apellido = models.CharField(max_length=100)
+	nombreUser = models.CharField(max_length=100)
+	correo = models.CharField(max_length=100)
+	password = models.CharField(max_length=40)
+
+	def __str__(self):
+		return self.nombre
 
 
 class Venue(models.Model):
@@ -20,7 +30,6 @@ class Venue(models.Model):
 	ciudad = models.CharField(max_length=40)
 	estado = models.CharField(max_length=40)
 	pais = models.CharField(max_length=50, blank=False)
-
 
 	capacidadPersonas = models.IntegerField()
 	precio = models.IntegerField()

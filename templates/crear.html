@@ -1,48 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Bands Project</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="../css/styles.css">
-	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-</head>
-<body class="crear">
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">  
-          <span class="glyphicon glyphicon-play play-nav" aria-hidden="true"></span>
-          <div class="input-group">
-  			<input type="text" class="form-control input-nav" placeholder="Busca por bandas o eventos" aria-describedby="basic-addon1">
-  			<span class="input-group-addon font" id="basic-addon1">Buscar</span>
-		  </div>
-        </div>
-      </form>
-      <form class="navbar-form navbar-right" role="search">
-      	<div class="form-group form-navbar">
-      		<a class="links-nav" href="#">Crear</a>
-      		<a href="#" class="links-nav">Descubre</a>
-      		<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-      	</div>
-      </form>
-    </div>
-  </div>
-</nav>
-
-<!-- Este es todo el main -->
-
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
 <main>
 	<div class="container">
 		<div class="row">
@@ -73,7 +31,7 @@
 				<div class="row container-thumbnails-venues">
 				  <div class="col-sm-4 col-md-4">
 				    <div class="thumbnail venues-thumbnail">
-				      	<img class="image-thumbnail" src="../img/forosol.jpg" alt="Foro Sol">
+				      	<img class="image-thumbnail" src="{% static 'img/forosol.jpg' %}" alt="Foro Sol">
 				      <div class="caption">
 				        <p class="ellipsis nombre-venue">Foro Sol</p>
 				      </div>
@@ -81,7 +39,7 @@
 				  </div>
 				  <div class="col-sm-4 col-md-4">
 				    <div class="thumbnail venues-thumbnail">
-				      	<img class="image-thumbnail" src="../img/palacion.jpg" alt="Foro Sol">
+				      	<img class="image-thumbnail" src="{% static 'img/palacion.jpg' %}" alt="Foro Sol">
 				      <div class="caption">
 				        <p class="ellipsis nombre-venue">Palacio de los Deportes</p>
 				      </div>
@@ -89,7 +47,7 @@
 				  </div>
 				  <div class="col-sm-4 col-md-4">
 				    <div class="thumbnail venues-thumbnail">
-				      	<img class="image-thumbnail" src="../img/auditorio.jpg" alt="Foro Sol">
+				      	<img class="image-thumbnail" src="{% static 'img/auditorio.jpg' %}" alt="Foro Sol">
 				      <div class="caption">
 				        <p class="nombre-venue ellipsis">Auditorio Nacional</p>
 				      </div>
@@ -107,7 +65,7 @@
 			</div>
 			<div class="col-md-6 vista-previa-container">
 				<div class="image-container-vista-previa">
-					<img class="img-vista-previa" src="../img/ptv.jpg">
+					<img class="img-vista-previa" src="{% static 'img/ptv.jpg' %}">
 				</div>
 				<div class="nombre-banda-previa">
 					<h1>Pierce The Veil</h1>
@@ -155,8 +113,4 @@
 		</div>
 	</div>
 </main>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script type="text/javascript" src='../js/script.js'></script>
-</body>
-</html>
+{% endblock %}

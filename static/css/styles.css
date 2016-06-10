@@ -1,6 +1,5 @@
 /* Estos estilos son generales*/
 
-
 *{
 	padding: 0;
 	margin-top: 0;
@@ -8,6 +7,9 @@
 }
 span{
 	color: white;
+}
+main{
+	margin-top: 65px;
 }
 p, h1, h2, h3 ,h4, h5 ,h6{
 	font-family: 'Raleway', sans-serif;
@@ -66,16 +68,19 @@ p, h1, h2, h3 ,h4, h5 ,h6{
     border: none;
 }
 .uno-container-image, .tres-container-image{
-	background-image: url('img/ptv.jpg');
+	background-image: url('../img/ptv.jpg');
 }
 .dos-container-image{
-	background-image: url('img/KISS.jpg');
+	background-image: url('../img/KISS.jpg');
 }
 .cuatro-container-image{
-	background-image: url('img/sws.jpg');
+	background-image: url('../img/sws.jpg');
 }
 .cinco-container-image{
-	background-image: url('img/bmth.jpg');
+	background-image: url('../img/bmth.jpg');
+}
+.modal-backdrop{
+	z-index: 900;
 }
 
 
@@ -119,14 +124,7 @@ p, h1, h2, h3 ,h4, h5 ,h6{
 .play-nav{
 	margin-right: 12px;
 }
- /* estos estilos pertenecen al crear*/
 
-.main-descubre{
-	margin-top: 60px;
-}
-.modal-backdrop{
-	z-index: 900;
-}
 
 /* Estos estilos pertenecen a crear */
 
@@ -148,15 +146,13 @@ body{
 .cosas-del-evento-container{
 	width: 49%;
 	background-color: #252525;
-	height: auto;
-	margin-top: 57px;	
+	height: auto;	
 	margin-bottom: 10px;
 	padding-bottom: 30px;
 }
 .vista-previa-container{
 	height: 43.6vw;
 	width: 49%;
-	margin-top: 57px;
 	margin-bottom: 10px;
 	padding-bottom: 30px;
 }
